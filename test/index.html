@@ -1,19 +1,20 @@
 <html>
-
 	<head>
+		<meta charset="UTF-8" />
 		<title>Pokus</title>
+		<link rel="stylesheet" href="../lib/jquery-ui.min.css" />
 		<link rel="stylesheet" href="../duf-editor.css" />
 		<script src="../lib/jquery-1.11.3.min.js"></script>
+		<script src="../lib/jquery-ui.min.js"></script>
+		<script src="../lib/d3.min.js"></script>
 		<script src="../duf-editor.js"></script>
-		<script src="../lib/raphael-min.js"></script>
 	</head>
 	<body>
-		<div id="parent" style="width:1000px;background-color:#ddd;">
+		<div id="parent" style="width:100%;">
 			<textarea id="pokus">nothing here</textarea>
 		</div>
 		<script>
 			$("#pokus").dufEditor();
 		</script>
 	</body>
-
 </html>

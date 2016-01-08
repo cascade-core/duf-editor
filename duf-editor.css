@@ -14,29 +14,92 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ***********************************************************************/
 
+/* TODO vše pouze uvnitř dufEditorWrapper */
+.activeItemOverlay {
+	background-color: red;
+	height: 100%;
+	left: 0;
+	opacity: 0.25;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#defaultLayout {
+	height: 100%;
+	width: 100%;
+}
+
+#dufEditorToolbar {
+	background-color: #3cc;
+}
+
 #dufEditorEditorWrapper {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 8;
-	min-width: 400px;
+	height: 50vw;
+	left: 15%;
+	position: absolute;
+	top: 0;
+	width: 65%;
+}
+
+#dufEditorPaletteHeader {
+	background-color: #069;
 }
 
 #dufEditorPaletteWrapper {
-	flex-grow: 1;
-	min-width: 100px;
+	background-color: #6ff;
+	height: 50vw;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 15%;
+}
+
+#dufEditorPalette {
+	padding: 1em;
+}
+
+#dufEditorPalette svg {
+	margin-bottom: 0.5em;
+}
+
+#dufEditorPropertiesHeader {
+	background-color: #069;
 }
 
 #dufEditorPropertiesWrapper {
-	flex-grow: 1;
-	min-width: 100px;
+	background-color: #6ff;
+	height: 50vw;
+	left: 80%;
+	position: absolute;
+	top: 0;
+	width: 20%;
 }
 
-#dufEditorView {
-	flex-grow: 1;
+#dufEditorView svg {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 #dufEditorWrapper {
-	display: flex;
-	flex-direction: row;
-	min-width: 600px;
+	background-color: #cff;
+	height: 50vw;
+	position: relative;
+	width: 100%;
+}
+
+#dufEditorWrapper h2 {
+	font-size: 100%;
+}
+
+#layouts h3, #widgets h3 {
+	font-size: 100%;
+	margin: 0;
+}
+
+svg {
+	margin: 2px;
 }
