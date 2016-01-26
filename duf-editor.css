@@ -14,8 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ***********************************************************************/
 
-/* TODO vše pouze uvnitř dufEditorWrapper */
-.activeItemOverlay {
+#dufEditorWrapper .activeItemOverlay {
 	background-color: red;
 	height: 100%;
 	left: 0;
@@ -25,16 +24,16 @@ limitations under the License.
 	width: 100%;
 }
 
-#defaultLayout {
+#dufEditorWrapper #noLayout {
 	height: 100%;
 	width: 100%;
 }
 
-#dufEditorToolbar {
+#dufEditorWrapper #dufEditorToolbar {
 	background-color: #3cc;
 }
 
-#dufEditorEditorWrapper {
+#dufEditorWrapper #dufEditorEditorWrapper {
 	height: 50vw;
 	left: 15%;
 	position: absolute;
@@ -42,41 +41,51 @@ limitations under the License.
 	width: 65%;
 }
 
-#dufEditorPaletteHeader {
+#dufEditorWrapper #dufEditorPaletteHeader {
 	background-color: #069;
 }
 
-#dufEditorPaletteWrapper {
+#dufEditorWrapper #dufEditorPaletteWrapper {
 	background-color: #6ff;
 	height: 50vw;
 	left: 0;
+	overflow-y: auto;
 	position: absolute;
 	top: 0;
 	width: 15%;
 }
 
-#dufEditorPalette {
+#dufEditorWrapper #dufEditorPalette {
 	padding: 1em;
 }
 
-#dufEditorPalette svg {
+#dufEditorWrapper #dufEditorPalette svg {
 	margin-bottom: 0.5em;
 }
 
-#dufEditorPropertiesHeader {
+#dufEditorWrapper #dufEditorProperties td {
+	padding: 0.5em;
+}
+
+#dufEditorWrapper #dufEditorPropertiesHeader {
 	background-color: #069;
 }
 
-#dufEditorPropertiesWrapper {
+#dufEditorWrapper #dufEditorPropertiesWrapper {
 	background-color: #6ff;
 	height: 50vw;
 	left: 80%;
+	overflow-y: auto;
 	position: absolute;
 	top: 0;
 	width: 20%;
 }
 
-#dufEditorView svg {
+#dufEditorWrapper #dufEditorView {
+	overflow: auto;
+}
+
+#dufEditorWrapper #dufEditorView svg {
 	height: 100%;
 	left: 0;
 	position: absolute;
@@ -91,15 +100,20 @@ limitations under the License.
 	width: 100%;
 }
 
-#dufEditorWrapper h2 {
+#dufEditorWrapper #dufEditorWrapper h2 {
 	font-size: 100%;
 }
 
-#layouts h3, #widgets h3 {
+#dufEditorWrapper #layouts h3 {
 	font-size: 100%;
 	margin: 0;
 }
 
-svg {
+#dufEditorWrapper svg {
 	margin: 2px;
+}
+
+#dufEditorWrapper #widgets h3 {
+	font-size: 100%;
+	margin: 0;
 }

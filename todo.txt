@@ -1,0 +1,50 @@
+########
+# TODO #
+########
+scrollbar - palette & properties - only y
+scrollbar - editor - margin/padding issue (botom)
+labels - draw the label instead of "Label", "Submit" etc.
+icons: trash, remove, undo, redo
+vykreslení ostatních typů elementů
+načítání z JSON
+historie jako diff místo snapshotu
+prettify ui
+ukázkový režim
+proklikávání alá Balsamiq
+prefix ids with "dufEditor-", change css accordingly
+vizualize some attributes (e.g. disabled, checked)
+resize elements in palette to something reasonable + dynamic colums
+
+###################
+# DONE 28.01.2016 #
+###################
+FIX		incidental mass removal of properties
+FIX		sometimes adding property with null value instead of removing it
+EDIT	table layout used for properties
+FIX		palette tooltips working differently in some browsers
+EDIT	extracted anonymous function
+FIX		all CSS rules prefixed with #dufEditorWrapper so the rules no longer affect elements outside of the editor
+FIX		creation of properties with empty name and/or empty value
+FIX		creation of properties with a duplicate name
+NEW		history (svg+properties): 
+			undo
+			redo 
+			autosave on: 
+				create property
+				property change (blur)
+				property change (Enter)
+				remove property
+				add element
+				reorder elements
+				resize element
+				remove element
+NEW		scrollable:
+			palette
+			editor
+			properties
+NEW		some more elements drawed using d3
+
+###############
+# FUTURE WORK #
+###############
+HTML5 validace properties v editoru
